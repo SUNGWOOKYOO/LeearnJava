@@ -19,6 +19,7 @@ public class basicskill{
 		System.out.println(c1.getPerimeter());
 		com.fxmx.simple.circle c2 = new com.fxmx.simple.circle(5.5);
 		System.out.println(c2.getArea());
+		
 	}
 }
 //*/

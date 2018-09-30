@@ -1,6 +1,7 @@
 package swyoo;
 
 import swyoo.Sort;
+import swyoo.MaxHeap;
 import java.util.*;
 
 public class hw {
@@ -80,6 +81,12 @@ public class hw {
 		Rs.showarray();
 		showexternalarray(a,n);
 		
+		System.out.println("Heap sort: ");
+		MaxHeap Mh = new MaxHeap(a);
+		showexternalarray(a,n);
+		int []t = Mh.heap_sort();
+		showexternalarray(t,n);
+		showexternalarray(a,n);
 	}
 	
 }

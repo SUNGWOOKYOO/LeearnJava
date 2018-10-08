@@ -1,12 +1,15 @@
 package swyoo;
 
-public class MaxHeap {
-	public int []A;
+public class MaxHeap extends Sort implements Runable {
+//	public int []A;
 	public int HeapLastIndex;
 	
-	public MaxHeap(int[] a){
-		A = a.clone();
+		
+	public MaxHeap(int[] a, int sizeofa){
+		super(a, sizeofa);
+		//A = a.clone();
 		HeapLastIndex = 0;
+		
 	}
 	public int[] getA(){
 		
@@ -24,11 +27,7 @@ public class MaxHeap {
 		if(((i<< 1) + 2) <= HeapLastIndex) return (i<<1)+2;
 		else return i;
 	}
-	public void swap(int i,int j){
-		int temp = A[j];
-		A[j] = A[i];
-		A[i] = temp;
-	}
+	
 	public void max_heapify(int i){
 		int L = left(i);
 		int R = right(i);
@@ -59,4 +58,12 @@ public class MaxHeap {
 		return getA();
 	}
 
+	@Override
+	public void runSort() {
+		long startTime = System.nanoTime();
+		heap_sort();
+		long endTime   = System.nanoTime();
+		Rtime = endTime - startTime;
+		System.out.println(Rtime);		
+	}
 }

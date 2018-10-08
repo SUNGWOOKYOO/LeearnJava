@@ -114,7 +114,7 @@ class basic {
 		return age;
 	}
 }
-*/
+
 
 // Deep copy 
 // in order to copy an instance deeply, we need to override Object.clone() function
@@ -204,4 +204,4 @@ class basic {
     }
 }
 
-
+*/

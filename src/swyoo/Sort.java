@@ -3,14 +3,15 @@ import java.util.*;
 import java.lang.*;
 
 public class Sort {
-	private int []A;
-	private int N;
+	public int []A;
+	public int N;
+	public long Rtime;
 	public Sort(int []a, int sizeofa){
 		N = sizeofa;
 		A = new int[N];
 		for(int i=0; i<N; i++){
 			A[i] = a[i]; // deep copy
-		}
+		}	
 	}
 	public int[] getA(){
 		
@@ -28,14 +29,11 @@ public class Sort {
 		}
 		System.out.println();
 	}
-	
-	public static void showinnerarray(int []a, int n){
-		for(int i=0; i<n; i++){
-			System.out.print(a[i]+ "  ");
-		}
-		System.out.println();
+	public long printRtime() {
+		return Rtime;
 	}
 	
+/*
 	public void insertion_sort(){
 		int i;
 		for (int j = 1; j < N; j++){
@@ -48,7 +46,7 @@ public class Sort {
 			A[i + 1] = key;
 		}
 	}
-	
+
 	public void selection_sort(){
 		for(int i=0; i< N-1; i++){
 			int min = i; 
@@ -153,6 +151,7 @@ public class Sort {
 		}
 	}
 	
+	
 	public int[] counting_sort(int []a, int []B, int k){
 		int []C = new int[k+1];
 		for(int i=0; i<k+1; i++){
@@ -212,6 +211,7 @@ public class Sort {
 			counting_sort_with_digit(A, B, mx, i);
 		}
 	}
+	*/
 	
 	
 }

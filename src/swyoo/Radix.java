@@ -81,7 +81,7 @@ public class Radix extends Sort implements Runable {
 		radix_sort(D);
 		long endTime   = System.nanoTime();
 		Rtime = endTime - startTime;
-		System.out.println(Rtime);		
+		//System.out.println(Rtime);		
 	}
 	
 }

@@ -21,6 +21,6 @@ public class Selection extends Sort implements Runable{
 		selection_sort();
 		long endTime   = System.nanoTime();
 		Rtime = endTime - startTime;
-		System.out.println(Rtime);		
+		//System.out.println(Rtime);		
 	}
 }

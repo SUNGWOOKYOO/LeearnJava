@@ -51,7 +51,7 @@ public class Merge extends Sort implements Runable {
 		merge_sort(0,N-1);
 		long endTime   = System.nanoTime();
 		Rtime = endTime - startTime;
-		System.out.println(Rtime);		
+		//System.out.println(Rtime);		
 	}
 
 }

@@ -64,6 +64,6 @@ public class RQick extends Sort implements Runable{
 		randomized_quicksort(0,N-1);
 		long endTime   = System.nanoTime();
 		Rtime = endTime - startTime;
-		System.out.println(Rtime);		
+		//System.out.println(Rtime);		
 	}
 }

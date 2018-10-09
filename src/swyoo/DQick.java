@@ -40,6 +40,6 @@ public class DQick extends Sort implements Runable{
 		deterministic_quicksort(0,N-1);
 		long endTime   = System.nanoTime();
 		Rtime = endTime - startTime;
-		System.out.println(Rtime);		
+		//System.out.println(Rtime);		
 	}
 }

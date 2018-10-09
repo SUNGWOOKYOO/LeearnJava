@@ -64,6 +64,6 @@ public class MaxHeap extends Sort implements Runable {
 		heap_sort();
 		long endTime   = System.nanoTime();
 		Rtime = endTime - startTime;
-		System.out.println(Rtime);		
+		//System.out.println(Rtime);		
 	}
 }

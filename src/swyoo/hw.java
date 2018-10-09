@@ -8,10 +8,6 @@ import java.util.*;
 
 public class hw {
 	
-	public static int n_sort = 4;
-	public static int size1 = 10000;
-	public static int size2 = 50000;
-	
 	public static void showexternalarray(int []a, int N){
 		for(int i=0; i<N; i++){
 			System.out.print(a[i]+ "  ");
@@ -20,14 +16,6 @@ public class hw {
 	}
 	
 	public static void main(String[] args) {
-		
-		int [][]data = new int[n_sort][];
-		for (int i = 0; i < n_sort-2; i++)
-			data[i] = new int[size1];
-		for (int i = n_sort-2; i < n_sort; i++)
-			data[i] = new int[size2];
-		
-		
 /* ========================================================================================================================
  * 				Parsing Data
  ========================================================================================================================*/
